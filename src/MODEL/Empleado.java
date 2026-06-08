@@ -34,14 +34,13 @@ public class Empleado extends Persona {
     }
 
     @Override
-    public String toString() {
-        return "Empleado\n" +
-                "Rut: " + getRut() + "\n" +
-                "Nombre: " + getNombre() + "\n" +
-                "Telefono: " + getTelefono() + "\n" +
-                "Email: " + getEmail() + "\n" +
-                "Direccion: " + getDireccion() + "\n" +
-                "Cargo: " + cargo + "\n" +
-                "Sueldo: $" + sueldo;
+        public String toString () {
+            return "Rut: " + getRut() + "\n" +
+                    "Nombre: " + getNombre() + "\n" +
+                    "Telefono: " + getTelefono() + "\n" +
+                    "Email: " + getEmail() + "\n" +
+                    "Direccion: " + getDireccion() + "\n" +
+                    "Cargo: " + cargo + "\n" +
+                    "Sueldo: $" + sueldo;
+        }
     }
-}
