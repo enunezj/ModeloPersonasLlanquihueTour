@@ -1,0 +1,4 @@
+12345678-9,Juan Pino,999999999,jupi@gmail.com,salvador 999,lampa,santiago
+2422222-7,Juan perez,911111111,Juan@gmail.com,vlaverde 91,lo pinto,santiago
+2333555-1,Bianca Muñoz,988888888,bianc@gmail.com,snjuan,colina,santiago
+20329430-1,Emilio Nuñez,911111111,emilio@gmail.com,balmaceda 64,la florida,santiago

@@ -3,12 +3,12 @@ package MODEL;
 public class Direccion {
 
     private String calle;
-    private int numero;
+    private String comuna;
     private String ciudad;
 
-    public Direccion(String calle, int numero, String ciudad) {
+    public Direccion(String calle, String comuna, String ciudad) {
         this.calle = calle;
-        this.numero = numero;
+        this.comuna = comuna;
         this.ciudad = ciudad;
     }
 
@@ -20,12 +20,12 @@ public class Direccion {
         this.calle = calle;
     }
 
-    public int getNumero() {
-        return numero;
+    public String getComuna() {
+        return comuna;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setComuna(String comuna) {
+        this.comuna = comuna;
     }
 
     public String getCiudad() {
@@ -38,7 +38,6 @@ public class Direccion {
 
     @Override
     public String toString() {
-        return  calle + " #" + numero +", ciudad='" + ciudad + '\'' +
-                '}';
+        return calle + ", " + comuna + ", " + ciudad;
     }
 }

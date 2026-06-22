@@ -1,20 +1,24 @@
 package MODEL;
 
-// Herencia desde Persona
-
 public class Empleado extends Persona {
 
+    private String rol;
     private String cargo;
     private double sueldo;
 
-    public Empleado(String rut, String nombre, String telefono,
-                    String email, Direccion direccion,
-                    String cargo, double sueldo) {
+    public Empleado(String rut,
+                    String nombre,
+                    String telefono,
+                    String email,
+                    Direccion direccion,
+                    String cargo,
+                    double sueldo,
+                    String rol) {
 
         super(rut, nombre, telefono, email, direccion);
-
         this.cargo = cargo;
         this.sueldo = sueldo;
+        this.rol = rol;
     }
 
     public String getCargo() {
@@ -33,15 +37,19 @@ public class Empleado extends Persona {
         this.sueldo = sueldo;
     }
 
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
     @Override
     public String toString() {
-        return "Empleado\n" +
-                "Rut: " + getRut() + "\n" +
-                "Nombre: " + getNombre() + "\n" +
-                "Telefono: " + getTelefono() + "\n" +
-                "Email: " + getEmail() + "\n" +
-                "Direccion: " + getDireccion() + "\n" +
+        return super.toString() + "\n" +
                 "Cargo: " + cargo + "\n" +
+                "Rol: " + rol + "\n" +
                 "Sueldo: $" + sueldo;
     }
 }
