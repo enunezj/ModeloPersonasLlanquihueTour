@@ -265,4 +265,4 @@ https://github.com/enunezj/ModeloPersonasLlanquihueTour
 
 ## Fecha de entrega
 
-21/06/2026
+22/06/2026
